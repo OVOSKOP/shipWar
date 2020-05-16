@@ -18,8 +18,8 @@ class Field{
 	// проверяет нахождение клетки в массиве usedDeck, если клетки нет в массиве, программа вызывает метод
 	// hit, которая засчитывает клетку в массив и если игрок попал, то засчитывает урон кораблю.
 	public:
-		Ships s[10];
-		vector < pair <Deck, int> > usedDeck; //  {((1,1), 1), {{(1,2),2}}
+		Ship s[10];
+		vector < pair <Deck, int> > usedDeck; //  {((1,1), 1), {((1,2),0)}
 		bool hit(int x, int y);
 		bool isUsed(int x, int y);
 		bool isFree(int x, int y);
@@ -37,9 +37,9 @@ class Ship{
 		// конструктор получает количество палуб, координату начальной клетки, и направление,
 		// вызывает метод isFree, который проверяет свободность клетки, и если координата свободна
 		// то в зависимости от направления прибавляет к x или y единицу и проверяет свободность новой координаты, по количеству палуб 
-		Ships(int n, int x, int y, int dir);
+		Ship(int n, int x, int y, int dir);
 		int countDeck;
 		Deck d[n];
-		isHit();
+		bool isHit();
 };
 #endif //SHIPWARCLASSES_HPP
