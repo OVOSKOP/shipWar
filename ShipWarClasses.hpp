@@ -4,7 +4,7 @@
 class Field{
 	public:
 		Ships s[10];
-		Hit()
+		hit()
 };
 class Deck{
 	public: 
@@ -12,11 +12,11 @@ class Deck{
 		int y;
 };
 
-class Ships{
+class Ship{
 	public:
-		Ships(int n);
+		Ship(int n);
 		int countDeck;
-		Deckd[n];
-		IsHit();
+		Deck[n];
+		isHit();
 };
 #endif //SHIPWARCLASSES_HPP
