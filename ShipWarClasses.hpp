@@ -10,6 +10,7 @@ class Game {
 	void run();// метод, который запускает игру
 
 };
+
 class Player {
 	Field f; // поле игрока с его кораблями
 	// игрок ставит корабль в клетку, программа вызывает метод addShip, передает в нее количество палуб
@@ -30,6 +31,7 @@ class Field{
 		bool isUsed(int x, int y);
 		bool isFree(int x, int y);
 };
+
 class Deck{
 	// палуба корабля
 	public:
@@ -48,4 +50,5 @@ class Ship{
 		Deck d[n];
 		bool isHit();
 };
+
 #endif //SHIPWARCLASSES_HPP
