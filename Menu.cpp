@@ -32,6 +32,7 @@ void printVariants()
 
 int getInput()
 {
+    int a; 
     cin >> a;
     return a;
 }
