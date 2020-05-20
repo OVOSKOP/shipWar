@@ -4,6 +4,15 @@
 #include <vector>
 #include <utility> //pair, make_pair
 
+class Menu{
+public: 
+    void run(); //функция запуска меню, вызывается при запуске программы и при выходе в меню
+private:
+    const int variantCount = 2; //количество вариантов выбора в меню
+    void printVariants();  //функция вывода вариантов выбора
+    int getInput(); // функция получающая выбор пользователя
+}
+
 class Game {
 	public:
 	    void run();// метод, который запускает игру
