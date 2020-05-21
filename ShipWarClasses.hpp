@@ -45,6 +45,11 @@ class Pirate : public Player
         Pirate();
 };
 
+class Admiral: Player{
+    public:
+        Admiral();
+};
+
 class Field{
 	// Игрок вводит 2 координаты в диапазоне [a-k], [1-10], программа вызывает isUsed, которая
 	// проверяет нахождение клетки в массиве usedDeck, если клетки нет в массиве, программа вызывает метод
@@ -84,8 +89,5 @@ class Ship{
 		int deckCount;
 		vector < Deck > decks;
 };
-class Admiral: Player{
-    public:
-        Admiral();
-};
+
 #endif //SHIPWARCLASSES_HPP
