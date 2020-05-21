@@ -40,8 +40,8 @@ class Player {
 };
 
 class Merchant : public  Player{
-       public:
-                 Merchant();
+   public:
+        Merchant();
  };
 
 class Pirate : public Player
