@@ -39,6 +39,12 @@ class Player {
 	    vector < Ship > avalaibleShips; // инвентарь игрока с десятью кораблями
 };
 
+class Pirate : public Player
+{
+    public:
+        Pirate();
+};
+
 class Field{
 	// Игрок вводит 2 координаты в диапазоне [a-k], [1-10], программа вызывает isUsed, которая
 	// проверяет нахождение клетки в массиве usedDeck, если клетки нет в массиве, программа вызывает метод
