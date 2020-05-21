@@ -5,7 +5,7 @@
 #include <utility> //pair, make_pair
 
 class Menu{
-public: 
+public:
     void run(); //функция запуска меню, вызывается при запуске программы и при выходе в меню
 private:
     const int variantCount = 2; //количество вариантов выбора в меню
@@ -45,8 +45,8 @@ class Field{
 	// hit, которая засчитывает клетку в массив и если игрок попал, то засчитывает урон кораблю.
 	public:
 	    // addShip вызывает метод isFree, который проверяет свободность клетки, и если координата свободна
-		// то в зависимости от направления прибавляет к x или y единицу и проверяет свободность 
-	    // новой координаты, по количеству палуб 
+		// то в зависимости от направления прибавляет к x или y единицу и проверяет свободность
+	    // новой координаты, по количеству палуб
 	    bool addShip(int x, int y, int n, int dir);
 		bool hit(int x, int y);
 		bool isUsed(int x, int y);
@@ -54,13 +54,13 @@ class Field{
 	    bool isInBounds(int x, int y);
 	private:
 		vector < Ship > ships;
-		vector < pair <Deck, int> > usedDeck; 
+		vector < pair <Deck, int> > usedDeck;
 };
 
 class Deck{
 	// палуба корабля
 	public:
-		Deck(int x, int y); 
+		Deck(int x, int y);
 	private:
 		int x;
 		int y;
@@ -68,7 +68,7 @@ class Deck{
 
 class Ship{
 	public:
-		// конструктор получает количество палуб координату начальной клетки, и направление, 
+		// конструктор получает количество палуб координату начальной клетки, и направление,
 	    // и создаёт корабль с этими координатами
 		Ship(int n);
 		bool set(int x, int y, int dir);
@@ -78,5 +78,8 @@ class Ship{
 		int deckCount;
 		vector < Deck > decks;
 };
-
+class Admiral: Player{
+    public:
+        Admiral();
+};
 #endif //SHIPWARCLASSES_HPP
